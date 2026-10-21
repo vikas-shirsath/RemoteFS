@@ -1,0 +1,3 @@
+remotefs\common\FileInfo.class
+remotefs\common\FileService.class
+remotefs\common\FileOpException.class

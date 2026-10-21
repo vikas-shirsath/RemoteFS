@@ -1,0 +1,8 @@
+remotefs\server\LockManager.class
+remotefs\server\PathValidator.class
+remotefs\server\FileServiceImpl.class
+remotefs\server\AuditLogger.class
+remotefs\server\VersionManager.class
+remotefs\server\AuthManager$Session.class
+remotefs\server\AuthManager.class
+remotefs\server\ServerMain.class

@@ -1,0 +1,8 @@
+remotefs\tests\RenameDeadlockTest.class
+remotefs\tests\ConcurrentAppendTest.class
+remotefs\tests\E2ETest.class
+remotefs\tests\TestHelper.class
+remotefs\tests\PathTraversalTest.class
+remotefs\tests\AtomicReadWriteTest.class
+remotefs\tests\AuthSecurityTest.class
+remotefs\tests\VersionConflictTest.class
