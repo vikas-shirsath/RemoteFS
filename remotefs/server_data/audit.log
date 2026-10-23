@@ -69,3 +69,38 @@
 [2026-10-21T11:26:33.634] user=admin      op=DELETE   path=docs/pom_copy.xml              result=OK
 [2026-10-21T11:26:37.522] user=admin      op=DELETE   path=docs                           result=FAIL: I/O error
 [2026-10-21T11:26:43.529] user=admin      op=LIST     path=.                              result=OK
+[2026-10-21T14:05:11.904] user=admin      op=LOGIN    path=-                              result=OK
+[2026-10-21T14:06:35.479] user=alice      op=LOGIN    path=-                              result=OK
+[2026-10-21T14:06:55.319] user=admin      op=LIST     path=.                              result=OK
+[2026-10-21T14:06:57.679] user=alice      op=LIST     path=.                              result=OK
+[2026-10-21T14:07:49.419] user=alice      op=LIST     path=docs                           result=OK
+[2026-10-21T14:08:15.435] user=alice      op=LIST     path=subfolder                      result=FAIL: Directory not found: subfolder
+[2026-10-21T14:08:26.822] user=alice      op=LIST     path=docs/subfolder                 result=OK
+[2026-10-21T14:08:29.682] user=alice      op=LIST     path=.                              result=OK
+[2026-10-21T14:08:32.972] user=alice      op=LIST     path=docs/subfolder                 result=OK
+[2026-10-22T10:34:30.547] user=admin      op=LOGIN    path=-                              result=OK
+[2026-10-22T10:34:42.822] user=alice      op=LOGIN    path=-                              result=OK
+[2026-10-22T10:35:44.367] user=admin      op=LIST     path=.                              result=OK
+[2026-10-22T10:36:33.094] user=admin      op=MKDIR    path=project1                       result=OK
+[2026-10-22T10:36:36.403] user=alice      op=LIST     path=.                              result=OK
+[2026-10-22T10:37:12.446] user=admin      op=READ     path=project1/notes.txt             result=FAIL: File not found: project1/notes.txt
+[2026-10-22T10:37:39.987] user=alice      op=LIST     path=docs                           result=OK
+[2026-10-22T10:37:55.602] user=alice      op=LIST     path=subfolder                      result=FAIL: Directory not found: subfolder
+[2026-10-22T10:37:58.796] user=alice      op=LIST     path=subfolder/                     result=FAIL: Directory not found: subfolder/
+[2026-10-22T10:38:12.270] user=alice      op=LIST     path=docs/                          result=OK
+[2026-10-22T10:38:17.825] user=alice      op=LIST     path=docs/subfolder/                result=OK
+[2026-10-22T10:39:26.606] user=admin      op=APPEND   path=project1/notes.txt             result=OK (+23 bytes)
+[2026-10-22T10:39:42.046] user=admin      op=READ     path=project1/notes.txt             result=OK (23 bytes)
+[2026-10-22T10:40:07.101] user=alice      op=LIST     path=.                              result=OK
+[2026-10-22T10:40:46.469] user=alice      op=APPEND   path=project1/notes.txt             result=OK (+34 bytes)
+[2026-10-22T10:40:53.190] user=admin      op=READ     path=project1/notes.txt             result=OK (57 bytes)
+[2026-10-22T10:43:33.651] user=alice      op=READ     path=project1/notes.txt             result=OK (57 bytes)
+[2026-10-22T10:43:38.900] user=alice      op=LIST     path=.                              result=OK
+[2026-10-22T10:44:07.856] user=admin      op=STAT     path=docs/pom_copy.xml              result=FAIL: File not found: docs/pom_copy.xml
+[2026-10-22T10:44:07.871] user=admin      op=WRITE    path=docs/pom_copy.xml              result=OK (v1, 2640 bytes)
+[2026-10-22T10:44:46.153] user=admin      op=STAT     path=docs/pom_copy.xml              result=OK
+[2026-10-22T10:45:10.553] user=admin      op=STAT     path=project1/notes.txt             result=OK
+[2026-10-22T11:42:41.989] user=alice      op=LOGIN    path=-                              result=OK
+[2026-10-22T11:42:58.866] user=admin      op=LOGIN    path=-                              result=OK
+[2026-10-22T11:43:16.901] user=alice      op=MKDIR    path=project2                       result=OK
+[2026-10-22T11:43:23.315] user=admin      op=LIST     path=.                              result=OK
